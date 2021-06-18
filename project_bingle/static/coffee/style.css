@@ -1,3 +1,14 @@
-h1 {
-    color: green;
+body { 
+    background-image:url('../coffee/bell_bills_caf_cappuccino_cash_register_checkout_coffee_cup-985852.jpg!d.jpeg') !important;
+    background-size: 100%;
 }
+table {
+    background-color: aliceblue;
+
+}
+.top-buffer { margin-top: 100px;}
+
+h1 {
+    color: aliceblue;
+}
+
