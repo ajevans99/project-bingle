@@ -12,3 +12,8 @@ h1 {
     color: aliceblue;
 }
 
+.user-forms {
+    background-color: aliceblue  !important;
+    padding: 1em;
+    margin: 1em;
+}

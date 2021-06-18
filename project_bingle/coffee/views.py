@@ -9,7 +9,14 @@ from django.contrib import messages
 # Create your views here.
 
 def index(request):
-    profiles = Profile.objects.order_by('coffee_cup_count')
+    print(request.user)
+    if request.method == 'POST':
+        print('POSTY')
+        profile = Profile.objects.get(user=request.user)
+        profile.coffee_cup_count += 1
+        profile.save()
+
+    profiles = Profile.objects.order_by('coffee_cup_count').reverse()
 
     context = {
         'profiles': profiles 

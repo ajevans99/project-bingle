@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 
+{% load bootstrap4 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
 {% block content %}
 <div class="container">
 
@@ -28,6 +34,15 @@
         {% endif %}
     </tbody>
   </table>
+
+  <form method="POST">
+    {% csrf_token %}
+    {% buttons %}
+    <button type="submit" class="btn btn-primary">
+      Drink 1 cup!
+    </button>
+  {% endbuttons %}
+  </form>
 </div>
 {% endblock content %}
 
