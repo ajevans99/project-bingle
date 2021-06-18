@@ -1,0 +1,15 @@
+{% load bootstrap4 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+{# Load custom CSS #}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'coffee/style.css' %}"/>
+
+<div class="container">
+    <h1>Hello World</h1>
+</div>
+
+
