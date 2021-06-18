@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-sq4j_@1=bnus&*d_x6y7&8g2!6jy#)0p0ng8639pm!mwrw-t^l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['projectbingle.azurewebsites.net']
 
 
 # Application definition
